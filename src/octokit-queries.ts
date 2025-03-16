@@ -24,10 +24,6 @@ export const getTeamSlugsForAuthor = async (
       core.info(`${username} not a member of ${slug}`);
       core.info(`${username} not a member of ${slug}`);
       core.info(`${username} not a member of ${slug}`);
-      core.info(`${username} not a member of ${slug}`);
-      core.info(`${username} not a member of ${slug}`);
-      core.info(`${username} not a member of ${slug}`);
-      core.info(`${username} not a member of ${slug}`);
     }
 
     try {
