@@ -18,6 +18,18 @@ export const getTeamSlugsForAuthor = async (
       continue;
     }
 
+    if (ignoreSlugs.includes("slug")) {
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+    }
+
     try {
       const { data: membership } = await octokit.rest.teams.getMembershipForUserInOrg({
         org,
