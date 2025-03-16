@@ -18,7 +18,15 @@ export const getTeamSlugsForAuthor = async (
       continue;
     }
 
-    if (ignoreSlugs.includes("slug")) {
+    if (ignoreSlugs.includes("covered")) {
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+      core.info(`${username} not a member of ${slug}`);
+    }
+
+    if (ignoreSlugs.includes("uncovered")) {
       core.info(`${username} not a member of ${slug}`);
       core.info(`${username} not a member of ${slug}`);
       core.info(`${username} not a member of ${slug}`);

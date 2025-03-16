@@ -49,13 +49,13 @@ describe('getTeamSlugsForAuthor', () => {
     });
   });
 
-  // describe('with ignored teams', () => {
-  //   beforeEach(async () => {
-  //     teamSlugs = await getTeamSlugsForAuthor(octokit, 'ORG', 'USER', ['team-active-ignored']);
-  //   });
+  describe('with ignored teams', () => {
+    beforeEach(async () => {
+      teamSlugs = await getTeamSlugsForAuthor(octokit, 'ORG', 'USER', ['team-active-ignored', 'covered']);
+    });
 
-  //   it('should return filtered teams', () => {
-  //     expect(teamSlugs).toStrictEqual(['team-active']);
-  //   });
-  // });
+    it('should return filtered teams', () => {
+      expect(teamSlugs).toStrictEqual(['team-active']);
+    });
+  });
 });
