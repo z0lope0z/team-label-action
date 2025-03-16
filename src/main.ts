@@ -7,7 +7,7 @@ const run = async (): Promise<void> => {
   try {
     const org = core.getInput('organization-name', { required: true });
 
-    // Get author, PR number from context
+    // Get author, PR number from context test
     const pullRequest = context.payload.pull_request;
 
     if (!pullRequest) {
