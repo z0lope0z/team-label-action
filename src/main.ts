@@ -18,12 +18,6 @@ const run = async (): Promise<void> => {
 
     const author = pullRequest?.user.login;
 
-    if (!org) {
-      core.debug('Could not get org');
-
-      return;
-    }
-
     if (!author) {
       core.debug('Could not get author from context');
 
