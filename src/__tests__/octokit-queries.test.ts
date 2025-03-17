@@ -51,7 +51,7 @@ describe('getTeamSlugsForAuthor', () => {
 
   describe('with ignored teams', () => {
     beforeEach(async () => {
-      teamSlugs = await getTeamSlugsForAuthor(octokit, 'ORG', 'USER', ['team-active-ignored']);
+      teamSlugs = await getTeamSlugsForAuthor(octokit, 'ORG', 'USER', ['team-active-ignored', 'covered']);
     });
 
     it('should return filtered teams', () => {
